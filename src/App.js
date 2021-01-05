@@ -26,6 +26,10 @@ function App() {
       category: "entertainment",
     },
     {
+      img: '',
+      category: "sports",
+    },
+    {
       img: ent2,
       category: "entertainment",
     },
@@ -36,6 +40,10 @@ function App() {
     {
       img: tech1,
       category: "technology",
+    },
+    {
+      img: '',
+      category: "sports",
     },
     {
       img: tech2,

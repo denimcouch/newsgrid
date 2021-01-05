@@ -2,17 +2,17 @@ import React from "react";
 import Article from "../components/Article";
 
 export default function HomeArticlesContainer({ articlePics }) {
-
   const createArticles = () => {
-    return articlePics.map((imgObj) => (
+    return articlePics.map((imgObj, index) => (
       <Article
-        className="home-article"
+        key={index + 1}
+        index = {index}
         img={imgObj.img}
         category={imgObj.category}
       />
     ));
   };
-  
+
   return (
     <section id="home-articles" className="py-2">
       <div className="container">
