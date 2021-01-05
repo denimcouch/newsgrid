@@ -26,7 +26,7 @@ export default function Article(props) {
         return "category";
     }
   };
-
+  
   return (
     <article className={cardBG()}>
       {props.img === "" ? null : <img src={props.img} alt="" />}
