@@ -1,6 +1,12 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React version of the NewsGrid project found in the Modern HTML & CSS udemy course taught by Brad Traversy.
+This site makes use of Font Awesome's React packages for the icons.
+
+## Resources   
+
+[Modern HTML & CSS by Brad Traversy](https://www.udemy.com/share/1013eAAEcaeFdUQn0A/)  
+[Font Awesome React Component](https://fontawesome.com/how-to-use/on-the-web/using-with/react)  
 
 ## Available Scripts
 
@@ -40,6 +46,8 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
