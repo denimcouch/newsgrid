@@ -22,8 +22,14 @@ export default function NavBar() {
           </a>
         </div>
         <ul>
-          <li><a href="#" className="current">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li>
+            <a href="#" className="current">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
         </ul>
       </div>
     </nav>
