@@ -16,6 +16,7 @@ import tech2 from "./image_resources/articles/tech2.jpg";
 import NavBar from "./components/NavBar";
 import ShowcaseHeader from "./components/ShowcaseHeader";
 import HomeArticlesContainer from "./containers/HomeArticlesContainer";
+import FooterContainer from './containers/FooterContainer'
 
 library.add(fab);
 
@@ -55,6 +56,7 @@ function App() {
       <NavBar />
       <ShowcaseHeader />
       <HomeArticlesContainer articlePics={articlePics} />
+      <FooterContainer />
     </div>
   );
 }
