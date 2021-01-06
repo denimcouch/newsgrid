@@ -1,8 +1,24 @@
 import React from "react";
 import logo from "../image_resources/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
+
+  const handleClick = (target) => {
+
+    const homeBtn = document.getElementById('home-nav-btn')
+    const aboutBtn = document.getElementById('about-nav-btn')
+    
+    if (target.id === homeBtn.id) {
+      aboutBtn.className = ''
+      return target.className === 'current' ? null : target.className = 'current'
+    } else if (target.id === aboutBtn.id) {
+      homeBtn.className = ''
+      return target.className === 'current' ? null : target.className = 'current'
+    }
+  }
+
   return (
     <nav id="main-nav">
       <div className="container">
@@ -22,14 +38,12 @@ export default function NavBar() {
           </a>
         </div>
         <ul>
-          <li>
-            <a href="#" className="current">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
+          <Link to="/">
+            <li id='home-nav-btn' onClick={e => handleClick(e.target)} className='current'>Home</li>
+          </Link>
+          <Link to="/about">
+            <li id='about-nav-btn' onClick={e => handleClick(e.target)}>About</li>
+          </Link>
         </ul>
       </div>
     </nav>
