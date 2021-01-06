@@ -1,3 +1,7 @@
+// React and React Router
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 // Styling
 import "./App.css";
 
@@ -14,9 +18,9 @@ import tech2 from "./image_resources/articles/tech2.jpg";
 
 // Components
 import NavBar from "./components/NavBar";
-import ShowcaseHeader from "./components/ShowcaseHeader";
-import HomeArticlesContainer from "./containers/HomeArticlesContainer";
-import FooterContainer from './containers/FooterContainer'
+import HomeContainer from "./containers/HomeContainer";
+import AboutPageContainer from "./containers/AboutPageContainer";
+import FooterContainer from "./containers/FooterContainer";
 
 library.add(fab);
 
@@ -27,7 +31,7 @@ function App() {
       category: "entertainment",
     },
     {
-      img: '',
+      img: "",
       category: "sports",
     },
     {
@@ -43,7 +47,7 @@ function App() {
       category: "technology",
     },
     {
-      img: '',
+      img: "",
       category: "sports",
     },
     {
@@ -52,12 +56,22 @@ function App() {
     },
   ];
   return (
-    <div className="app">
-      <NavBar />
-      <ShowcaseHeader />
-      <HomeArticlesContainer articlePics={articlePics} />
-      <FooterContainer />
-    </div>
+    <Router>
+      <div className="app">
+        <NavBar />
+        <Switch>
+          <Route
+            path="/"
+            exact
+            render={(routerProps) => (
+              <HomeContainer articlePics={articlePics} />
+            )}
+          />
+          <Route path="/about" component={AboutPageContainer} />
+        </Switch>
+        <FooterContainer />
+      </div>
+    </Router>
   );
 }
 
