@@ -6,7 +6,7 @@ import FooterJoin from '../components/FooterJoin'
 
 export default function FooterContainer() {
  return (
-    <footer id="main-footer">
+    <footer id="main-footer" className='py-2'>
       <div className="container footer-container">
         <FooterAbout />
         <FooterNewsletter />
