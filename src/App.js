@@ -22,7 +22,6 @@ import HomeContainer from "./containers/HomeContainer";
 import AboutPageContainer from "./containers/AboutPageContainer";
 import ArticleContainer from "./containers/ArticleContainer";
 import FooterContainer from "./containers/FooterContainer";
-import Article from "./components/ArticleCard";
 
 library.add(fab);
 
