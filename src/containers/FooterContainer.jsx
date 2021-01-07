@@ -13,7 +13,7 @@ export default function FooterContainer() {
         <FooterLinks />
         <FooterJoin />
         <div>
-          <p>Copyright &copy; 2020, All Rights Reserved</p>
+          <p>Copyright &copy; 2021, All Rights Reserved</p>
         </div>
       </div>
     </footer>
