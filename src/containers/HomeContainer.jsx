@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import ArticleCard from "../components/ArticleCard";
 import ShowcaseHeader from "../components/ShowcaseHeader";
 
@@ -15,6 +15,10 @@ export default function HomeContainer({ articlePics, getArticleInfo }) {
       />
     ));
   };
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, []);
 
   return (
     <main>
