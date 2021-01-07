@@ -1,5 +1,5 @@
 // React and React Router
-import React from "react";
+import {useState} from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Styling
@@ -20,11 +20,13 @@ import tech2 from "./image_resources/articles/tech2.jpg";
 import NavBar from "./components/NavBar";
 import HomeContainer from "./containers/HomeContainer";
 import AboutPageContainer from "./containers/AboutPageContainer";
+import ArticleContainer from "./containers/ArticleContainer";
 import FooterContainer from "./containers/FooterContainer";
 
 library.add(fab);
 
 function App() {
+
   const articlePics = [
     {
       img: ent1,
@@ -55,6 +57,15 @@ function App() {
       category: "technology",
     },
   ];
+
+  const [articleImg, setArticleImg] = useState('')
+  const [articleCat, setArticleCat] = useState('')
+
+  const getArticleInfo = (image, category) => {
+    setArticleImg(image)
+    setArticleCat(category)
+  }
+
   return (
     <Router>
       <div className="app">
@@ -64,10 +75,14 @@ function App() {
             path="/"
             exact
             render={(routerProps) => (
-              <HomeContainer articlePics={articlePics} />
+              <HomeContainer articlePics={articlePics} getArticleInfo={getArticleInfo} />
             )}
           />
-          <Route path="/about" component={AboutPageContainer} />
+          <Route path="/about" component={AboutPageContainer} />\
+          <Route
+            path="/article"
+            render={(routerProps) => <ArticleContainer img={articleImg} category={articleCat} />}
+          />
         </Switch>
         <FooterContainer />
       </div>

@@ -1,15 +1,17 @@
 import React from "react";
-import Article from "../components/Article";
+import ArticleCard from "../components/ArticleCard";
 import ShowcaseHeader from "../components/ShowcaseHeader";
 
-export default function HomeContainer({ articlePics }) {
-  const createArticles = () => {
+export default function HomeContainer({ articlePics, getArticleInfo }) {
+
+  const createArticleCards = () => {
     return articlePics.map((imgObj, index) => (
-      <Article
+      <ArticleCard
         key={index + 1}
-        index={index}
+        id={index}
         img={imgObj.img}
         category={imgObj.category}
+        getArticleInfo={getArticleInfo}
       />
     ));
   };
@@ -20,7 +22,7 @@ export default function HomeContainer({ articlePics }) {
       <section id="home-articles" className="py-2">
         <div className="container">
           <h2>Editor's Pick</h2>
-          <div className="articles-container">{createArticles()}</div>
+          <div className="articles-container">{createArticleCards()}</div>
         </div>
       </section>
     </main>
