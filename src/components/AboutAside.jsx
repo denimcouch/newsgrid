@@ -5,7 +5,7 @@ const AboutAside = () => {
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, odit.
       </p>
-      <a href="#" className="btn btn-dark btn-block">
+      <a href="#about" className="btn btn-dark btn-block">
         Join Now
       </a>
     </aside>
