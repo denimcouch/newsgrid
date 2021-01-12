@@ -8,22 +8,22 @@ const ArticleSideBar = () => {
         <h2>Categories</h2>
         <ul className="list">
           <li>
-            <a href="#">
+            <a href="#categories">
               <FontAwesomeIcon icon={faChevronRight} /> Sports
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#categories">
               <FontAwesomeIcon icon={faChevronRight} /> Entertainment
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#categories">
               <FontAwesomeIcon icon={faChevronRight} /> Technology
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#categories">
               <FontAwesomeIcon icon={faChevronRight} /> Fashion
             </a>
           </li>
@@ -34,7 +34,7 @@ const ArticleSideBar = () => {
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, odit.
         </p>
-        <a href="#" className="btn btn-dark btn-block">
+        <a href="#categories" className="btn btn-dark btn-block">
           Join Now
         </a>
       </aside>

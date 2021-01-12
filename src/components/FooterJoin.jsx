@@ -5,7 +5,7 @@ export default function FooterJoin() {
     <div>
       <h2>Join Our Club</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, maiores.</p>
-      <a href="#" className="btn btn-secondary">Join Now</a>
+      <a href="#main-footer" className="btn btn-secondary">Join Now</a>
     </div>
   );
 }

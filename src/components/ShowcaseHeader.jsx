@@ -9,7 +9,7 @@ export default function ShowcaseHeader() {
             <div className="category category-sports">Sports</div>
             <h1>Some Sports Article</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo natus modi beatae ipsam minus, expedita temporibus vel tempora, totam, impedit nisi cumque velit a porro? Explicabo iste porro hic!</p>
-            <a href="#" className="btn btn-primary">Read More</a>
+            <a href="#home-articles" className="btn btn-primary">Read More</a>
           </div>
         </div>
       </div>
